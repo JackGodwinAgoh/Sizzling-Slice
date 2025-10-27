@@ -10,50 +10,62 @@ body {
 
 .navbar {
   display: flex;
-  padding: 40px;
   align-items: center;
   justify-content: space-between;
+  padding: 40px;
   background-color: #fec012;
 }
 
+/* Logo section */
 .navbar .nav-logo .logo-image {
-  float: left;
   background-color: #fec012;
-
 }
 
+/* Navigation menu */
 .navbar .nav-menu {
   display: flex;
-  gap: 10px;
-  overflow: hidden;
-  float: right;
+  gap: 20px; /* increased gap for better spacing */
+  align-items: center;
+  list-style: none; /* removes bullet points */
+  margin: 0;
+  padding: 0;
 }
 
-.navbar .nav-menu .nav-item{
+/* Individual nav items */
+.navbar .nav-menu .nav-item {
   display: block;
-  color: black;
-  text-align: center;
-  padding: 10px 10px;
-  text-decoration: none;
-
 }
 
+/* Nav links (the actual clickable text) */
 .navbar .nav-menu .nav-link {
-  padding: 10px 10px;
-  color: var(--white-color);
-  font-size: var(--font-size-m);
+  display: block;
+  padding: 10px 15px;
+  color: black; /* changed from var(--white-color) for better contrast on yellow */
+  font-size: 20px; /* increased font size */
+  font-weight: 600;
   background-color: #fec012;
   border-radius: 10px;
-  transition: 0.3s ease;
-  list-style: 100px;
-  
+  text-decoration: none; /* ✅ removes the underline */
+  transition: all 0.3s ease;
 }
 
+/* Hover effect */
 .navbar .nav-menu .nav-link:hover {
-  color: var(--primary-color);
-  background:linear-gradient(90deg, #338c17,#eca815);
-} 
+  color: white;
+  background: linear-gradient(90deg, #338c17, #eca815);
+  text-decoration: none; /* ✅ ensures underline doesn't return on hover */
+}
+.image-container{
+  display: flex; gap: 50px; flex-direction: row; flex-wrap: wrap;
+}
 
+.image-item figcaption {
+  margin-top: 10px; font-size: 30px; color:rgb(107, 0, 0); font-family: fantasy; -webkit-text-stroke: 1px rgb(255, 141, 65); text-stroke: 2px black;
+}
+
+.image-item {
+  display: flex; flex-direction: row; text-align: center; flex-wrap: wrap;
+}
 
 
 
@@ -62,11 +74,10 @@ body {
 .content-container{
      /* Semi-transparent grey */
     max-width: 200px; /* Maximum width */
-    margin: 230px auto; /* Centered with a 20px margin */
-    padding: 1000px; /* Padding inside the container */
+    margin: 100px auto; /* Centered with a 20px margin */
+    padding: 30px; /* Padding inside the container */
     justify-content: right; /* Align content to the right */
     position:left; /* Incorrect property, 'center' is not valid in CSS */
-
     text-align: center; /* Center the text */
 
 }
