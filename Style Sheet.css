@@ -45,7 +45,7 @@ body {
   font-weight: 600;
   background-color: #fec012;
   border-radius: 10px;
-  text-decoration: none; /* ✅ removes the underline */
+  text-decoration: none; /*  removes the underline */
   transition: all 0.3s ease;
 }
 
@@ -53,29 +53,55 @@ body {
 .navbar .nav-menu .nav-link:hover {
   color: white;
   background: linear-gradient(90deg, #338c17, #eca815);
-  text-decoration: none; /* ✅ ensures underline doesn't return on hover */
-}
-.image-container{
-  display: flex; gap: 50px; flex-direction: row; flex-wrap: wrap;
+  text-decoration: none; /*  ensures underline doesn't return on hover */
 }
 
-.image-item figcaption {
-  margin-top: 10px; font-size: 30px; color:rgb(107, 0, 0); font-family: fantasy; -webkit-text-stroke: 1px rgb(255, 141, 65); text-stroke: 2px black;
+.image-container {
+  display: flex;
+  gap: 150px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; /* centers them horizontally */
 }
 
 .image-item {
-  display: flex; flex-direction: row; text-align: center; flex-wrap: wrap;
+  display: flex;
+  flex-direction: column; /* ✅ image above caption */
+  align-items: center;
+  text-align: center;
 }
 
+.image-item img {
+  width: 350px;
+  height: 250px;
+  border-radius: 8px;
+}
 
+.image-item figcaption {
+  margin-top: 10px;
+  font-size: 30px;
+  color: rgb(107, 0, 0);
+  font-family: fantasy;
+  -webkit-text-stroke: 1px rgb(255, 141, 65);
+  text-stroke: 2px black;
+}
 
+/* Optional: adjust for mobile */
+@media (max-width: 600px) {
+  .image-item img {
+    width: 200px;
+    height: auto;
+  }
+  .image-item figcaption {
+    font-size: 18px;
+  }
+}
 
 
 .content-container{
      /* Semi-transparent grey */
-    max-width: 200px; /* Maximum width */
     margin: 100px auto; /* Centered with a 20px margin */
-    padding: 30px; /* Padding inside the container */
+    padding: 50px; /* Padding inside the container */
     justify-content: right; /* Align content to the right */
     position:left; /* Incorrect property, 'center' is not valid in CSS */
     text-align: center; /* Center the text */
