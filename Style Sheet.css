@@ -78,13 +78,14 @@ body {
   border-radius: 8px;
 }
 
+
+
 .image-item figcaption {
   margin-top: 10px;
   font-size: 40px;
   color: #8c0909;
   text-shadow: 3px 7px 5px rgb(23, 21, 21);
-  text-shadow: 1px 0 #246810, 0 1px #246810, 1px 0 #246810, 0 -1px #246810;
-  font-family: fantasy;
+  text-shadow: 1px 1px 2px black, 0 0 40px #1d5e09, 0 0 5px #1d5e09;  font-family: fantasy;
   
 }
 
