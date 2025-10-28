@@ -64,9 +64,10 @@ body {
   justify-content: center; /* centers them horizontally */
 }
 
+
 .image-item {
   display: flex;
-  flex-direction: column; /* ✅ image above caption */
+  flex-direction: column; /*  image above caption */
   align-items: center;
   text-align: center;
 }
@@ -79,14 +80,15 @@ body {
 
 .image-item figcaption {
   margin-top: 10px;
-  font-size: 30px;
-  color: rgb(107, 0, 0);
+  font-size: 40px;
+  color: #8c0909;
+  text-shadow: 3px 7px 5px rgb(23, 21, 21);
+  text-shadow: 1px 0 #246810, 0 1px #246810, 1px 0 #246810, 0 -1px #246810;
   font-family: fantasy;
-  -webkit-text-stroke: 1px rgb(255, 141, 65);
-  text-stroke: 2px black;
+  
 }
 
-/* Optional: adjust for mobile */
+/*  adjust for mobile */
 @media (max-width: 600px) {
   .image-item img {
     width: 200px;
