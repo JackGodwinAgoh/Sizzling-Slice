@@ -112,6 +112,18 @@ body {
   }
 }
 
+.About-Us{
+  background-color: rgba(205, 216, 217, 0.6);
+  max-width: 1000px;
+  width: 90%;
+  padding: 40px;
+  text-align: center;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-top: 100px;
+}
+
+
 
 
 .contact-page {
@@ -130,7 +142,7 @@ body {
   max-width: 500px;
   margin: 40px auto;
   padding: 20px;
-  border: 1px solid #450909;
+  border: 1px solid #1876b5;
   width: 90%;
   text-align: center;
   border-radius: 15px;
