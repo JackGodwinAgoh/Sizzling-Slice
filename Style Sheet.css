@@ -112,45 +112,45 @@ body {
   }
 }
 
+.About-Us-Page .navbar.section-content {
+  margin-bottom: 20px; 
+}
 .About-Us-Page{
   background-image: url('https://i.pinimg.com/originals/d5/fe/65/d5fe654cb0c4431f58f6e1d1f4124ff5.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   min-height: 100vh;
+  display: block; 
+  padding-top: 10px; /* Adds space so content doesn’t hit navbar */
 }
-
-.About-Us-Page p{
-  font-family: Verdana, sans-serif;
-  font-size: 15px;
-  text-align: justify;  
-  line-height: 1.6;
-  margin: 1px auto;
-  padding: 15px;
-  max-width: 100%;
-  color: #000000;
-  border-radius: 10px;
-  box-sizing: border-box;
-  display: block;
-}
-
 
 .About-Us-Container{
   background-color: rgba(205, 216, 217, 0.6);
   max-width: 1000px;
   width: 90%;
-  padding: 40px;
+  padding-top: 120;
+  padding: 10px;
   text-align: center;
   border-radius: 15px;
+  margin: 0 auto; /* Centers the content */
   box-sizing: border-box;
-  margin-top: 100px;
 }
 
+.About-Us-Page p{
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.6;
+  margin: 1px auto;
+  padding: 15px;
+  max-width: 100%;
+  color: #000000;
+  border-radius: 100px;
+  box-sizing: border-box;
+  display: block;
+}
 
 
 
