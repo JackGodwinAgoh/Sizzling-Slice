@@ -111,12 +111,36 @@ body {
     font-size: 18px;
   }
 }
+.About-Us-Page h1 {
+  color: rgb(233, 12, 12);
+  text-shadow: 1px 1px 2px black, 0 0 50px #3acb0e, 0 0 30px #3cd10f, 0 0 30px;  
+}
 
+.About-Us-Page h2 {
+  color: #eca815;
+  text-shadow: 1px 1px 2px black, 0 0 40px #144804, 0 0 5px rgb(243, 243, 243);  
+  float: left;
+}
+
+
+.About-Us-Page p{
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  text-align: justify;  
+  line-height: 1.6;
+  margin: 1px auto;
+  padding: 15px;
+  max-width: 100%;
+  color: #000000;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: block;
+}
 .About-Us-Page .navbar.section-content {
   margin-bottom: 20px; 
 }
 .About-Us-Page{
-  background-image: url('https://i.pinimg.com/originals/d5/fe/65/d5fe654cb0c4431f58f6e1d1f4124ff5.png');
+  background-image: url('Pizza\ Board\ Background.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -127,7 +151,7 @@ body {
 }
 
 .About-Us-Container{
-  background-color: rgba(205, 216, 217, 0.6);
+  background-color: rgba(180, 180, 180, 0.8);
   max-width: 1000px;
   width: 90%;
   padding-top: 120;
@@ -136,6 +160,7 @@ body {
   border-radius: 15px;
   margin: 0 auto; /* Centers the content */
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .About-Us-Page p{
