@@ -120,6 +120,7 @@ body {
   color: #eca815;
   text-shadow: 1px 1px 2px black, 0 0 40px #144804, 0 0 5px rgb(243, 243, 243);  
   float: left;
+  margin-top: -20px;
 }
 
 
@@ -177,7 +178,32 @@ body {
   display: block;
 }
 
+.Ingredients{
+  background-color: rgba(180, 180, 180, 0.8);
+  max-width: 1000px;
+  width: 90%;
+  padding-top: 120;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  margin: 0 auto; /* Centers the content */
+  box-sizing: border-box;
+  overflow: hidden;
+}
 
+.Ingredients p{
+  font-family: verdana;
+    font-size: 15px; 
+    text-align: justify; 
+    line-height: 1.8; 
+}
+
+.Ingredients h1{
+  font-family: verdana;
+  font-size: 25px;
+  text-shadow: 1px 1px 2px black, 0 0 40px #144804, 0 0 5px rgb(243, 243, 243);  
+
+}
 
 .contact-page {
   background-image: url("Contact\ page\ background.jpg");
