@@ -8,6 +8,18 @@ body {
   
 }
 
+.content-container{
+  /* Semi-transparent grey */
+ margin: 100px auto; /* Centered with a 20px margin */
+ padding: 50px; /* Padding inside the container */
+ justify-content: right; /* Align content to the right */
+ position:left; /* Incorrect property, 'center' is not valid in CSS */
+ text-align: center; /* Center the text */
+
+}
+
+
+
 .navbar {
   display: flex;
   align-items: center;
@@ -101,14 +113,54 @@ body {
 }
 
 
-.content-container{
-     /* Semi-transparent grey */
-    margin: 100px auto; /* Centered with a 20px margin */
-    padding: 50px; /* Padding inside the container */
-    justify-content: right; /* Align content to the right */
-    position:left; /* Incorrect property, 'center' is not valid in CSS */
-    text-align: center; /* Center the text */
 
+.contact-page {
+  background-image: url('https://i.redd.it/dr7y4i0sjin81.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-form {
+  background-color: rgba(177, 216, 220, 0.6);
+  background-blend-mode: overlay;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #837979;
+  width: 90%;
+  text-align: center;
+  border-radius: 15px;
+  box-sizing: border-box;
+  margin-top: 100px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #00c7f9;
+}
+
+input[type="submit"] {
+  background:linear-gradient( #f3961c,#16b2e6);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: var(--black-color);
+  color: #f3961c;
 }
 
 
