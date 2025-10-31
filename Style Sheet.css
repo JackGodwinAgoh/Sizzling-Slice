@@ -23,13 +23,35 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 40px;
+  justify-content: space-between; /* pushes logo left & menu right */
+  padding: 20px;
   background-color: #fec012;
 }
 
+.nav-title {
+    font-size: 32px;         /* change size as needed */
+    font-weight: 800;
+    color: black;
+    white-space: nowrap;     /* keeps title on one line */
+
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+/* Make sure the logo behaves nicely in flexbox */
+.nav-logo img {
+  float: left;
+  height: 200px;
+  width: auto;
+  display: block;
+  background-color: #fec012;
+  
+}
 /* Logo section */
-.navbar .nav-logo .logo-image {
+.navbar .nav-logo .logo-image { 
   background-color: #fec012;
 }
 
@@ -60,6 +82,12 @@ body {
   text-decoration: none; /*  removes the underline */
   transition: all 0.3s ease;
 }
+
+.navbar .nav-menu .nav-link .Logo {
+
+  float: left;
+}
+
 
 /* Hover effect */
 .navbar .nav-menu .nav-link:hover {
