@@ -111,6 +111,35 @@ body {
     font-size: 18px;
   }
 }
+
+.Combo-Deals-Container{
+  background-color: rgba(180, 180, 180, 0.8);
+  max-width: 1000px;
+  width: 90%;
+  padding-top: 120;
+  padding: 10px;
+  text-align: center;
+  border-radius: 15px;
+  margin: 0 auto; /* Centers the content */
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.Combo-Deals-Container img{
+  float: left; 
+
+}
+
+.Combo-Deals-Container h1{
+  color: rgb(233, 12, 12);
+  text-shadow: 1px 1px 2px rgb(198, 12, 12), 0 0 50px #ec9430, 0 0 30px #4f0404, 0 0 30px;  
+}
+
+
+
+
+
+
 .About-Us-Page h1 {
   color: rgb(233, 12, 12);
   text-shadow: 1px 1px 2px black, 0 0 50px #3acb0e, 0 0 30px #3cd10f, 0 0 30px;  
