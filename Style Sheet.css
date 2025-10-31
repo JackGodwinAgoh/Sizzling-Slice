@@ -112,12 +112,22 @@ body {
   }
 }
 
+.Combo-Deals-Container figcaption{
+  margin-top: 10px;
+  font-size: 40px;
+  color: #8c0909;
+  text-shadow: 3px 7px 5px rgb(23, 21, 21);
+  text-shadow: 1px 1px 2px black, 0 0 40px #1d5e09, 0 0 5px #1d5e09;  font-family: fantasy;
+
+
+}
+
 .Combo-Deals-Container{
   background-color: rgba(180, 180, 180, 0.8);
-  max-width: 1000px;
+  max-width: 1200px;
   width: 90%;
   padding-top: 120;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   border-radius: 15px;
   margin: 0 auto; /* Centers the content */
@@ -126,7 +136,12 @@ body {
 }
 
 .Combo-Deals-Container img{
-  float: left; 
+  display: flex;
+  flex-direction: column; /*  image above caption */
+  align-items: center;
+  text-align: center;
+  
+   
 
 }
 
