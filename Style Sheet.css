@@ -29,9 +29,9 @@ body {
 }
 
 
-/* =============================
+/* 
    NAV TITLE (CENTER HEADING)
-   ============================= */
+*/
 .nav-title {
   font-size: 32px;
   font-weight: 800;
@@ -45,9 +45,9 @@ body {
   gap: 20px; /* Space between links */
 }
 
-/* ==================================
+/* 
    LOGO SETTINGS
-   ================================== */
+    */
 .nav-logo img {
   float: left; /* Float left inside container */
   height: 200px; /* Logo size */
@@ -61,9 +61,9 @@ body {
   background-color: #fec012;
 }
 
-/* ==================================
+/*
    NAV MENU LIST SETTINGS
-   ================================== */
+ */
 .navbar .nav-menu {
   display: flex;
   gap: 24px;
@@ -78,9 +78,9 @@ body {
   display: block;
 }
 
-/* ==================================
+/*
    NAVIGATION LINKS
-   ================================== */
+    */
 .navbar .nav-menu .nav-link {
   display: block;
   padding: 10px 15px;
@@ -105,9 +105,9 @@ body {
 }
 
 
-/* =============================
+/*
    IMAGE GRID CONTAINER
-   ============================= */
+    */
 .image-container {
   display: flex;
   gap: 100px; /* Space between images */
@@ -140,9 +140,9 @@ body {
   font-family: fantasy;
 }
 
-/* ==================================
+/* 
    RESPONSIVE IMAGES FOR MOBILES
-   ================================== */
+    */
 @media (max-width: 600px) {
   .image-item img {
     width: 200px; /* Smaller images */
@@ -153,9 +153,9 @@ body {
   }
 }
 
-/* =============================
+/* 
    COMBO DEALS STYLING
-   ============================= */
+  */
 .Combo-Deals-Container figcaption{
   margin-top: 10px;
   font-size: 40px;
@@ -191,9 +191,9 @@ body {
 
 
 
-/* =============================
+/* 
    ABOUT US PAGE HEADINGS
-   ============================= */
+    */
 .About-Us-Page h1 {
   color: rgb(233, 12, 12);
   text-shadow: 1px 1px 2px black, 0 0 50px #3acb0e, 0 0 30px #3cd10f;
@@ -265,9 +265,9 @@ body {
   display: block;
 }
 
-/* =============================
+/* 
    INGREDIENTS PAGE STYLING
-   ============================= */
+ */
 .Ingredients{
   background-color: rgba(180, 180, 180, 0.8);
   max-width: 1000px;
@@ -294,9 +294,9 @@ body {
   text-shadow: 1px 1px 2px black, 0 0 40px #144804, 0 0 5px white;
 }
 
-/* =============================
+/* 
    CONTACT PAGE BACKGROUND
-   ============================= */
+   */
 .contact-page {
   background-image: url("Contact page background.jpg");
   background-size: cover;
@@ -308,9 +308,9 @@ body {
 }
 
 
-/* =============================
+/*
    CONTACT FORM STYLING
-   ============================= */
+ */
 .contact-form {
   background-color: rgba(177, 216, 220, 0.6);
   background-blend-mode: overlay;
@@ -353,4 +353,75 @@ input[type="submit"]:hover {
   background-color: var(--black-color);
   color: #f3961c;
 }
+
+/* ✅ MOBILE FRIENDLY ADJUSTMENTS */
+@media (max-width: 768px) {
+
+  /* Navbar layout for small screens */
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .nav-logo img {
+    height: 120px;
+  }
+
+  .nav-title {
+    font-size: 24px;
+    margin-top: 5px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .nav-menu .nav-link {
+    width: 100%;
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  /* Content containers shrink properly */
+  .content-container,
+  .Combo-Deals-Container,
+  .Ingredients,
+  .About-Us-Container,
+  .contact-form {
+    width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  /* Images resize on mobile */
+  .image-item img {
+    width: 90%;
+    height: auto;
+  }
+
+  .image-item figcaption {
+    font-size: 24px;
+  }
+
+  /* Reduce title & heading sizes */
+  .Combo-Deals-Container h1,
+  .Ingredients h1,
+  .About-Us-Page h1 {
+    font-size: 26px;
+  }
+
+  /* Paragraphs easier to read on mobile */
+  .About-Us-Page p,
+  .Ingredients p {
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 10px;
+  }
+
+}
+
 
