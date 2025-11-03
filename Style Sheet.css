@@ -1,103 +1,109 @@
 body {
-  background-image: url('Pizza Board Background.png'); /* Set a background image */
-  background-repeat: no-repeat; /* Don't repeat the image */
-  background-size: cover; /* Cover the entire background */
-  background-position: center; /* Position the background in the center */
-  background-attachment: fixed; /* Make the background fixed while scrolling */ /* Make the background fixed while scrolling */
-  
-  
+  background-image: url('Pizza Board Background.png'); /* Background image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-size: cover; /* Scale image to cover screen */
+  background-position: center; /* Center background */
+  background-attachment: fixed; /* Keep background fixed on scroll */
 }
 
+/* 
+   MAIN CONTENT CONTAINER STYLE
+    */
 .content-container{
-  /* Semi-transparent grey */
- margin: 100px auto; /* Centered with a 20px margin */
- padding: 50px; /* Padding inside the container */
- justify-content: right; /* Align content to the right */
- position:left; /* Incorrect property, 'center' is not valid in CSS */
- text-align: center; /* Center the text */
-
+  margin: 100px auto; /* Center container with top/bottom spacing */
+  padding: 50px; /* Space inside container */
+  justify-content: right; /* Content aligns right (if flexbox used) */
+  position:left; /* <-- Not a valid CSS property, has no effect */
+  text-align: center; /* Center text inside */
 }
 
-
-
+/* 
+   NAVIGATION BAR STYLING
+  */
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; /* pushes logo left & menu right */
-  padding: 20px;
-  background-color: #fec012;
+  display: flex; /* Makes navbar items align in a row */
+  align-items: center; /* Vertically centers items */
+  justify-content: space-between; /* Logo left, menu right */
+  padding: 20px; /* Inner spacing */
+  background-color: #fec012; /* Yellow background */
 }
 
+
+/* =============================
+   NAV TITLE (CENTER HEADING)
+   ============================= */
 .nav-title {
-    font-size: 32px;         /* change size as needed */
-    font-weight: 800;
-    color: red;
-    white-space: nowrap;     /* keeps title on one line */
-      text-shadow: 1px 1px 2px rgb(185, 6, 6), 0 0 40px #1d5e09, 0 0 5px #1d5e09;  ;
-
-    
-
+  font-size: 32px;
+  font-weight: 800;
+  color: red;
+  white-space: nowrap; /* Prevents title from breaking into 2 lines */
+  text-shadow: 1px 1px 2px rgb(185, 6, 6), 0 0 40px #1d5e09, 0 0 5px #1d5e09; 
 }
 
 .nav-menu {
-    display: flex;
-    gap: 20px;
+  display: flex; /* Horizontal menu items */
+  gap: 20px; /* Space between links */
 }
 
-/* Make sure the logo behaves nicely in flexbox */
+/* ==================================
+   LOGO SETTINGS
+   ================================== */
 .nav-logo img {
-  float: left;
-  height: 200px;
-  width: auto;
-  display: block;
-  background-color: #fec012;
-  
+  float: left; /* Float left inside container */
+  height: 200px; /* Logo size */
+  width: auto; /* Keep proportions */
+  display: block; /* Removes inline spacing issues */
+  background-color: #fec012; /* Match navbar color */
 }
+
 /* Logo section */
 .navbar .nav-logo .logo-image { 
   background-color: #fec012;
 }
 
-/* Navigation menu */
+/* ==================================
+   NAV MENU LIST SETTINGS
+   ================================== */
 .navbar .nav-menu {
   display: flex;
-  gap: 24px; /* increased gap for better spacing */
+  gap: 24px;
   align-items: center;
-  list-style: none; /* removes bullet points */
+  list-style: none; /* Remove bullets */
   margin: 0;
   padding: 0;
 }
 
-/* Individual nav items */
+/* Individual list items */
 .navbar .nav-menu .nav-item {
   display: block;
 }
 
-/* Nav links (the actual clickable text) */
+/* ==================================
+   NAVIGATION LINKS
+   ================================== */
 .navbar .nav-menu .nav-link {
   display: block;
   padding: 10px 15px;
-  color: black; /* changed from var(--white-color) for better contrast on yellow */
-  font-size: 20px; /* increased font size */
+  color: black; /* Text color */
+  font-size: 20px;
   font-weight: 600;
   background-color: #fec012;
   border-radius: 10px;
-  text-decoration: none; /*  removes the underline */
-  transition: all 0.3s ease;
+  text-decoration: none; /* Remove underline */
+  transition: all 0.3s ease; /* Smooth hover animation */
 }
 
 .navbar .nav-menu .nav-link .Logo {
-
   float: left;
 }
 
-
-/* Hover effect */
+/* Hover effect for nav links */
 .navbar .nav-menu .nav-link:hover {
   color: white;
-  background: linear-gradient(90deg, #338c17, #eca815);
-  text-decoration: none; /*  ensures underline doesn't return on hover */
+  background: linear-gradient(90deg, #338c17, #eca815); /* Smooth color blend */
+  text-decoration: none;
 }
+
 
 .image-container {
   display: flex;
@@ -328,34 +334,5 @@ input[type="submit"]:hover {
   background-color: var(--black-color);
   color: #f3961c;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
