@@ -105,43 +105,47 @@ body {
 }
 
 
+/* =============================
+   IMAGE GRID CONTAINER
+   ============================= */
 .image-container {
   display: flex;
-  gap: 100px;
+  gap: 100px; /* Space between images */
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center; /* centers them horizontally */
+  flex-wrap: wrap; /* Wrap when screen is small */
+  justify-content: center; /* Center them */
 }
 
-
+/* Single image + caption holder */
 .image-item {
   display: flex;
-  flex-direction: column; /*  image above caption */
+  flex-direction: column; /* Image on top, text below */
   align-items: center;
   text-align: center;
 }
 
+/* Image styling */
 .image-item img {
   width: 350px;
   height: 250px;
   border-radius: 8px;
 }
 
-
-
+/* Captions under images */
 .image-item figcaption {
   margin-top: 10px;
   font-size: 40px;
   color: #8c0909;
-  text-shadow: 3px 7px 5px rgb(23, 21, 21);
-  text-shadow: 1px 1px 2px black, 0 0 40px #1d5e09, 0 0 5px #1d5e09;  font-family: fantasy;
-  
+  text-shadow: 1px 1px 2px black, 0 0 40px #1d5e09, 0 0 5px #1d5e09;
+  font-family: fantasy;
 }
 
-/*  adjust for mobile */
+/* ==================================
+   RESPONSIVE IMAGES FOR MOBILES
+   ================================== */
 @media (max-width: 600px) {
   .image-item img {
-    width: 200px;
+    width: 200px; /* Smaller images */
     height: auto;
   }
   .image-item figcaption {
@@ -149,66 +153,63 @@ body {
   }
 }
 
+/* =============================
+   COMBO DEALS STYLING
+   ============================= */
 .Combo-Deals-Container figcaption{
   margin-top: 10px;
   font-size: 40px;
   color: #8c0909;
-  text-shadow: 3px 7px 5px rgb(23, 21, 21);
-  text-shadow: 1px 1px 2px black, 0 0 40px #1d5e09, 0 0 5px #1d5e09;  font-family: fantasy;
-
-
+  text-shadow: 1px 1px 2px black, 0 0 40px #1d5e09, 0 0 5px #1d5e09;  
+  font-family: fantasy;
 }
 
 .Combo-Deals-Container{
   background-color: rgba(180, 180, 180, 0.8);
   max-width: 1200px;
   width: 90%;
-  padding-top: 120;
+  padding-top: 120; /* <-- Missing "px", so does not apply */
   padding: 20px;
   text-align: center;
   border-radius: 15px;
-  margin: 0 auto; /* Centers the content */
+  margin: 0 auto; /* Center block */
   box-sizing: border-box;
   overflow: hidden;
 }
 
 .Combo-Deals-Container img{
   display: flex;
-  flex-direction: column; /*  image above caption */
+  flex-direction: column;
   align-items: center;
   text-align: center;
-  
-   
-
 }
 
 .Combo-Deals-Container h1{
   color: rgb(233, 12, 12);
-  text-shadow: 1px 1px 2px rgb(198, 12, 12), 0 0 50px #ec9430, 0 0 30px #4f0404, 0 0 30px;  
+  text-shadow: 1px 1px 2px rgb(198, 12, 12), 0 0 50px #ec9430, 0 0 30px #4f0404;
 }
 
 
 
-
-
-
+/* =============================
+   ABOUT US PAGE HEADINGS
+   ============================= */
 .About-Us-Page h1 {
   color: rgb(233, 12, 12);
-  text-shadow: 1px 1px 2px black, 0 0 50px #3acb0e, 0 0 30px #3cd10f, 0 0 30px;  
+  text-shadow: 1px 1px 2px black, 0 0 50px #3acb0e, 0 0 30px #3cd10f;
 }
 
 .About-Us-Page h2 {
   color: #eca815;
-  text-shadow: 1px 1px 2px black, 0 0 40px #144804, 0 0 5px rgb(243, 243, 243);  
+  text-shadow: 1px 1px 2px black, 0 0 40px #144804, 0 0 5px white;
   float: left;
   margin-top: -20px;
 }
 
-
 .About-Us-Page p{
-  font-family: Verdana, sans-serif;
+  font-family: Verdana;
   font-size: 15px;
-  text-align: justify;  
+  text-align: justify;
   line-height: 1.6;
   margin: 1px auto;
   padding: 15px;
@@ -218,33 +219,38 @@ body {
   box-sizing: border-box;
   display: block;
 }
+
+/* Add space below navbar on About Us page only */
 .About-Us-Page .navbar.section-content {
   margin-bottom: 20px; 
 }
+
+/* Background styling for About page */
 .About-Us-Page{
-  background-image: url('Pizza\ Board\ Background.png');
+  background-image: url('Pizza Board Background.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  min-height: 100vh;
+  min-height: 100vh; /* Full screen */
   display: block; 
-  padding-top: 10px; /* Adds space so content doesn’t hit navbar */
+  padding-top: 10px; /* Prevent content from touching navbar */
 }
 
 .About-Us-Container{
   background-color: rgba(180, 180, 180, 0.8);
   max-width: 1000px;
   width: 90%;
-  padding-top: 120;
+  padding-top: 120; /* <-- Missing px */
   padding: 10px;
   text-align: center;
   border-radius: 15px;
-  margin: 0 auto; /* Centers the content */
+  margin: 0 auto;
   box-sizing: border-box;
   overflow: hidden;
 }
 
+/* About page paragraph styling */
 .About-Us-Page p{
   font-family: Verdana, sans-serif;
   font-size: 15px;
@@ -259,35 +265,40 @@ body {
   display: block;
 }
 
+/* =============================
+   INGREDIENTS PAGE STYLING
+   ============================= */
 .Ingredients{
   background-color: rgba(180, 180, 180, 0.8);
   max-width: 1000px;
   width: 90%;
-  padding-top: 120;
+  padding-top: 120; /* <-- Missing px */
   padding: 10px;
   text-align: center;
   border-radius: 15px;
-  margin: 0 auto; /* Centers the content */
+  margin: 0 auto;
   box-sizing: border-box;
   overflow: hidden;
 }
 
 .Ingredients p{
   font-family: verdana;
-    font-size: 15px; 
-    text-align: justify; 
-    line-height: 1.8; 
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.8;
 }
 
 .Ingredients h1{
   font-family: verdana;
   font-size: 25px;
-  text-shadow: 1px 1px 2px black, 0 0 40px #144804, 0 0 5px rgb(243, 243, 243);  
-
+  text-shadow: 1px 1px 2px black, 0 0 40px #144804, 0 0 5px white;
 }
 
+/* =============================
+   CONTACT PAGE BACKGROUND
+   ============================= */
 .contact-page {
-  background-image: url("Contact\ page\ background.jpg");
+  background-image: url("Contact page background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -296,6 +307,10 @@ body {
   padding: 0;
 }
 
+
+/* =============================
+   CONTACT FORM STYLING
+   ============================= */
 .contact-form {
   background-color: rgba(177, 216, 220, 0.6);
   background-blend-mode: overlay;
@@ -310,11 +325,13 @@ body {
   margin-top: 100px;
 }
 
+/* Form labels */
 label {
   display: block;
   margin-bottom: 5px;
 }
 
+/* Input + textarea styling */
 input, textarea {
   width: 100%;
   padding: 10px;
@@ -323,16 +340,17 @@ input, textarea {
   border: 1px solid #00c7f9;
 }
 
+/* Submit button */
 input[type="submit"] {
-  background:linear-gradient( #f3961c,#16b2e6);
+  background: linear-gradient(#f3961c,#16b2e6);
   padding: 10px 20px;
   border: none;
   cursor: pointer;
 }
 
+/* Hover effect on submit */
 input[type="submit"]:hover {
   background-color: var(--black-color);
   color: #f3961c;
 }
-
 
