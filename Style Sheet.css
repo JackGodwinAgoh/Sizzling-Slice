@@ -31,8 +31,11 @@ body {
 .nav-title {
     font-size: 32px;         /* change size as needed */
     font-weight: 800;
-    color: black;
+    color: red;
     white-space: nowrap;     /* keeps title on one line */
+      text-shadow: 1px 1px 2px rgb(185, 6, 6), 0 0 40px #1d5e09, 0 0 5px #1d5e09;  ;
+
+    
 
 }
 
@@ -98,7 +101,7 @@ body {
 
 .image-container {
   display: flex;
-  gap: 150px;
+  gap: 100px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center; /* centers them horizontally */
