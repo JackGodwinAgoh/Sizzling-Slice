@@ -110,7 +110,7 @@ body {
     */
 .image-container {
   display: flex;
-  gap: 100px; /* Space between images */
+  gap: 50px; /* Space between images */
   flex-direction: row;
   flex-wrap: wrap; /* Wrap when screen is small */
   justify-content: center; /* Center them */
@@ -354,7 +354,9 @@ input[type="submit"]:hover {
   color: #f3961c;
 }
 
-/* ✅ MOBILE FRIENDLY ADJUSTMENTS */
+
+
+/*  MOBILE FRIENDLY ADJUSTMENTS */
 @media (max-width: 768px) {
 
   /* Navbar layout for small screens */
