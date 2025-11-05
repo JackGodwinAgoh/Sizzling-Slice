@@ -13,7 +13,8 @@ body {
   margin: 100px auto; /* Center container with top/bottom spacing */
   padding: 50px; /* Space inside container */
   justify-content: right; /* Content aligns right (if flexbox used) */
-  position:left; /* <-- Not a valid CSS property, has no effect */
+  position: relative;
+  left: 0;  /* or another number like left: 20px */
   text-align: center; /* Center text inside */
 }
 
@@ -168,7 +169,6 @@ body {
   background-color: rgba(180, 180, 180, 0.8);
   max-width: 1200px;
   width: 90%;
-  padding-top: 120; /* <-- Missing "px", so does not apply */
   padding: 20px;
   text-align: center;
   border-radius: 15px;
@@ -241,7 +241,6 @@ body {
   background-color: rgba(180, 180, 180, 0.8);
   max-width: 1000px;
   width: 90%;
-  padding-top: 120; /* <-- Missing px */
   padding: 10px;
   text-align: center;
   border-radius: 15px;
@@ -272,7 +271,6 @@ body {
   background-color: rgba(180, 180, 180, 0.8);
   max-width: 1000px;
   width: 90%;
-  padding-top: 120; /* <-- Missing px */
   padding: 10px;
   text-align: center;
   border-radius: 15px;
