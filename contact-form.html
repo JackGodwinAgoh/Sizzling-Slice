@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    
+    <link rel="stylesheet" type="text/css" href="style-sheet.css">
+</head>
+
+<body class="contact-page">
+
+<header>
+    <nav class="navbar section-content">
+
+        <div class="nav-logo">
+            <img src="red-pizza-hat.png" alt="Pizza With Hat" height="200" class="logo">
+        </div>
+
+        <h1 class="nav-title">The Steamiest Shop In Town</h1>
+
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="combo-deals.html" class="nav-link">Combo Deals</a></li>
+            <li class="nav-item"><a href="ingredients.html" class="nav-link">Ingredients</a></li>
+            <li class="nav-item"><a href="about-us.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="contact-form.html" class="nav-link">Contact Us</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+<div class="contact-form">
+
+    <h2>If anything was bad with your experience, please contact us</h2>
+
+    <form action="" method="post">
+
+        <!-- USER NAME -->
+        <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- SUBJECT -->
+        <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+
+        <!-- COMPLAINT -->
+        <div class="form-group">
+            <label for="complaint">Complaint:</label>
+            <textarea id="complaint" name="complaint" required></textarea>
+        </div>
+
+        <!-- IMPROVEMENTS -->
+        <div class="form-group">
+            <label for="improvements">Improvements:</label>
+            <textarea id="improvements" name="improvements" required></textarea>
+        </div>
+
+        <!-- SUBMIT BUTTON -->
+        <div class="form-group">
+            <input type="submit" value="Send Message">
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
