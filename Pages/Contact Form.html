@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form </title>
+    
+    <link rel="stylesheet" type="text/css" href="style-sheet.css">
+</head>
+ <body class="contact-page">
+        <!-- Navbar -->
+   <header>
+    <nav class="navbar section-content">
+        
+        <!-- Logo -->
+        <div class="nav-logo">
+            <img src="red-pizza-hat.png" alt="Pizza With Hat" height="200" class="Logo">
+        </div>
+
+        <!-- Title -->
+        <h1 class="nav-title">The Steamiest Shop In Town</h1>
+
+        <!-- Navigation Menu -->
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="Pizza shop.html" class="nav-link" target="_blank">Home</a></li>
+            <li class="nav-item"><a href="Combo-Deals.html" class="nav-link" target="_blank">Combo-Deals</a></li>
+            <li class="nav-item"><a href="Ingredients.html" class="nav-link" target="_blank">Ingredients</a></li>
+            <li class="nav-item"><a href="About Us.html" class="nav-link" target="_blank">About us</a></li>
+            <li class="nav-item"><a href="Contact Form.html" class="nav-link" target="_blank">Contact Us</a></li>
+        </ul>
+
+    </nav>
+</header>
+   
+
+<!-- Contact form container holding the whole form section -->
+<div class="contact-form">
+
+    <!-- Page heading explaining the purpose of the form -->
+    <h2> If anything was bad with your experience please contact us </h2>
+
+    <!-- Form element that sends data using POST method -->
+    <form action="" method="post">
+
+        <!-- USER NAME FIELD -->
+        <div class="form-group">
+            <!-- Label telling user what to enter -->
+            <label for="name">Your Name:</label>
+
+            <!-- Text input for user name -->
+            <input type="text" id="email" name="name">
+        </div>
+
+        <!-- EMAIL INPUT FIELD -->
+        <div class="form-group">
+            <!-- Label for email field -->
+            <label for="email"> Email Address: </label>
+
+            <!-- Email input - "required" stops form from submitting empty -->
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <!-- SUBJECT FIELD -->
+        <div class="form-group">
+            <!-- Label for subject -->
+            <label for="subject">Subject:</label>
+
+            <!-- Text box for entering complaint subject -->
+            <input type="text" id="subject" name="subject" required>
+        </div>
+
+        <!-- COMPLAINT MESSAGE BOX -->
+        <div class="form-group">
+            <!-- Label for complaint message -->
+            <label for="message">Complaint:</label>
+
+            <!-- Textarea = large text box for long messages -->
+            <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <!-- IMPROVEMENTS SUGGESTION BOX -->
+        <div class="form-group">
+            <!-- Label asking for improvements -->
+            <label for="message">Improvements:</label>
+
+            <!-- Textarea for improvement suggestions -->
+            <textarea id="Improvements" name="Improvements:" required></textarea>
+        </div>
+
+        <!-- SUBMIT BUTTON -->
+        <div class="form-group">
+            <!-- Button to send the form data -->
+            <input type="submit" value="Send Message">
+        </div>
+
+    </form>
+</div>
+
+</div>
+</body>
+
